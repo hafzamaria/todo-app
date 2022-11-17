@@ -1,6 +1,8 @@
 import React from 'react'
 import { Button,Form} from 'react-bootstrap';
 import { useState } from 'react';
+
+/////jwt work
 const AddTodo = (props) => {
     const[title,setTitle]=useState('')
     const[desc,setDesc]=useState('')
@@ -9,8 +11,12 @@ const AddTodo = (props) => {
       e.preventDefault();
       if(!title || !desc){
         alert('title or Description cannot be blank')
+      }else{
+        props.addTodo(title,desc);
+        setTitle("");
+        setDesc("");
       }
-      props.addTodo(title,desc);
+     
     }
   return (
     <div className='container my-3'>
