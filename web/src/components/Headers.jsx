@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Nav, Navbar, Container, Form, Button } from "react-bootstrap";
+import { Nav, Navbar, Container } from "react-bootstrap";
 // import { propTypes ,deafultProps} from 'react-bootstrap/esm/Image';
 const Headers = (props) => {
   return (
@@ -15,11 +15,11 @@ const Headers = (props) => {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link href="#action1">Home</Nav.Link>
+              {/* <Nav.Link href="#action1">Home</Nav.Link> */}
 
-              <Nav.Link href="#action1">About</Nav.Link>
+              {/* <Nav.Link href="#action1">About</Nav.Link> */}
             </Nav>
-            {props.searchBar ? (
+            {/* {props.searchBar ? (
               <Form className="d-flex">
                 <Form.Control
                   type="search"
@@ -31,7 +31,7 @@ const Headers = (props) => {
               </Form>
             ) : (
               ""
-            )}
+            )} */}
           </Navbar.Collapse>
         </Container>
       </Navbar>

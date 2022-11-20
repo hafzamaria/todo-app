@@ -5,6 +5,7 @@ import Foot from "./components/Foot";
 import AddTodo from "./components/AddTodo";
 import { useState, useEffect } from "react";
 
+
 function App() {
   let initTodo;
   if (localStorage.getItem("todos") === null) {
@@ -49,7 +50,8 @@ function App() {
 
   return (
     <>
-      <Headers title="My Todos List" searchBar={true} />
+  
+       <Headers title="My Todos List" searchBar={true} />
 
       <AddTodo addTodo={addTodo} />
       <Todos todos={todos} onDelete={onDelete} />

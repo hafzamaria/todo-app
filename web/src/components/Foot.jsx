@@ -13,7 +13,7 @@ const Foot = () => {
     // <footer className='bg-dark text-light ' style={footStyle}>
      <footer className='bg-dark text-light py-2'> 
       <p className="text-center">
-      Copyright &copy;MyTodosList.com
+      Design by @HafzaMaria
     </p>
     </footer>
   )
